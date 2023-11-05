@@ -15,4 +15,8 @@ public class Comment
 
     public int MessageId { get; set; }
     public int UserId { get; set; }
+
+    public Message? Messages { get; set; }
+
+    public User? Users { get; set; }
 }

@@ -32,6 +32,8 @@ public class User
     [Compare("Password")]
     public string PasswordConfirm { get; set; }
 
+    public List<Comment> Comments { get; set; } = new List<Comment>();
+
 }
 
 public class UniqueEmailAttribute : ValidationAttribute

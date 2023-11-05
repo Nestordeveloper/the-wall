@@ -15,4 +15,6 @@ public class Message
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
     public int UserId { get; set; }
+
+    public List<Comment> Comments { get; set; } = new List<Comment>();
 }
