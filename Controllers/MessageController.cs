@@ -17,5 +17,11 @@ public class MessageController : Controller
         _context = context;
     }
 
-
+    // MESSAGE GET VIEW
+    [HttpGet]
+    [Route("messages")]
+    public IActionResult Messages()
+    {
+        return View("Messages");
+    }
 }

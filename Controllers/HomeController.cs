@@ -45,7 +45,7 @@ public class HomeController : Controller
 
                 TempData["SuccessMessage"] = "¡Registro exitoso! Ingrese sus credenciales en el Log in para iniciar sesión.";
 
-                return RedirectToAction("Index");
+                return RedirectToAction("Messages", "Message");
             }
             else
             {
@@ -93,7 +93,7 @@ public class HomeController : Controller
                 HttpContext.Session.SetString("Email", userInDb.Email);
                 HttpContext.Session.SetString("FirstName", userInDb.FirstName);
                 HttpContext.Session.SetInt32("UserId", userInDb.UserId);
-                return RedirectToAction("");
+                return RedirectToAction("Messages", "Message");
             }
             else
             {
@@ -107,6 +107,19 @@ public class HomeController : Controller
         {
             return View("Index");
         }
+    }
+
+    //LOGOUT
+    [HttpPost]
+    [Route("logout")]
+    public IActionResult ProcessLogout(string logout)
+    {
+        if (logout == "logout")
+        {
+            HttpContext.Session.Clear();
+            return View("Index");
+        }
+        return RedirectToAction("Messages", "Message");
     }
 
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "t7i5cFAjdYeTdFXJyovFfrLvH9I1xfxTU5OQifQS4r4=",
+  "Hash": "kF94TbMGCM8BhEHoK++H4N0qUbp+u/ZinyX5ZcDmlXw=",
   "Source": "the-wall",
   "BasePath": "_content/the-wall",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\snela\\Desktop\\the-wall\\wwwroot\\css\\styles.css",
+      "SourceId": "the-wall",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\snela\\Desktop\\the-wall\\wwwroot\\",
+      "BasePath": "_content/the-wall",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
       "Identity": "C:\\Users\\snela\\Desktop\\the-wall\\wwwroot\\favicon.ico",
